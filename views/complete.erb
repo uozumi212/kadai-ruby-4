@@ -31,28 +31,28 @@
             </div>
         </nav>
     </header>
-    <div  class=" container">
+    <div  class="container">
         <h1  class= " mt-4 pb-4 border-bottom">送信完了</h1>
         
         <p>ありがとうございました。送信を受け付けました。</p>
         <p>3営業日以内をめどにご返信いたしますので、しばらくお待ちください。</p>
        
-        <% company = params['target_company'] %>
-         <% name = params['target_name'] %>
-          <% mail = params['target_mail'] %>
-           <% phone = params['target_phone'] %>
+      <% company = params['target_company'] %>
+          <% name = params['target_name'] %> 
+           <% mail = params['target_mail'] %>
+            <% phone = params['target_phone'] %>
             <% content = params['target_content'] %>
        
         <h2>送信内容</h2>
-        <p>    会社名  <%=  company %>  </p>
-        <hr>     氏名   <%= name %>  </hr>
-        <hr>     メール <%= mail %> </hr>
-        <hr>     電話番号  <%= phone %>  </hr>
-        <hr>       内容<br>  <%= content.gsub(/\r\n|\r|\n/, "<br>") %>  </hr>
-
+        <p>    会社名  <%=  company %> <p> 
+        <hr>     氏名   <%= name %> <hr>
+        <hr>     メール <%= mail %> <hr>
+        <hr>     電話番号  <%= phone %> <hr>
+        <hr>       内容<br>  <%= content.gsub(/\r\n|\r|\n/, "<br>") %> <hr>
+        
         <div class= "text-center mb-4">
             
-           <hr> <a href="/" class="btn btn-success ">戻る</a></hr>
+           <hr> <a href="/" class="btn btn-success ">戻る</a><hr>
         </div>
     </div>
     <footer class="text-center pt-3 border-top">
